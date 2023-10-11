@@ -31,6 +31,11 @@ export const config: Options.Testrunner = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
+    hostname: 'localhost',
+    port: 4444,
+    path: '/',
+    services: ['chromedriver'],
+
     specs: [
         './test/specs/**/*.ts'
     ],
